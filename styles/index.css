@@ -1,0 +1,16 @@
+/** STYLE: INDEX
+ * **************************************************
+ * This file imports all css base styles that can be
+ * used throughout the application.
+ *
+ * * PUBLIC ENTRY:
+ * --------------------------------------------------
+ * import this one file from your app to get
+ * defaults.
+ * ************************************************** */
+
+/** STYLE: VARIABLES */
+@import url("./variables.css");
+
+/** STYLE: THEMES */
+@import url("./themes.css");

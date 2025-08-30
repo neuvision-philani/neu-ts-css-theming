@@ -1,0 +1,101 @@
+/** STYLE: VARIABLES > COLORS > VARIANTS
+ * **************************************************
+ ** (RGB triplets for easy rgba(var(--var), a))
+ * --------------------------------------------------
+ * The colors in this section are defined in RGB
+ * format.
+ *
+ * The colors are defined in the following format:
+ * --------------------------------------------------
+ * * "--app-clr-"
+ * ************************************************** */
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > white */
+:root {
+  --app-clr-white: 255, 255, 255;
+  --app-clr-white-01: 245, 245, 245;
+  --app-clr-white-02: 230, 230, 230;
+  --app-clr-white-03: 210, 210, 210;
+  --app-clr-white-04: 190, 190, 190;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > black */
+:root {
+  --app-clr-black: 0, 0, 0;
+  --app-clr-black-01: 30, 30, 30;
+  --app-clr-black-02: 60, 60, 60;
+  --app-clr-black-03: 90, 90, 90;
+  --app-clr-black-04: 120, 120, 120;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > red */
+:root {
+  --app-clr-red: 255, 0, 0;
+  --app-clr-red-01: 220, 20, 60;
+  --app-clr-red-02: 192, 0, 0;
+  --app-clr-red-03: 255, 99, 71;
+  --app-clr-red-04: 255, 69, 0;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > pink */
+:root {
+  --app-clr-pink: 235, 92, 120;
+  --app-clr-pink-01: 255, 182, 193;
+  --app-clr-pink-02: 255, 105, 180;
+  --app-clr-pink-03: 219, 112, 147;
+  --app-clr-pink-04: 255, 192, 203;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > green */
+:root {
+  --app-clr-green: 0, 255, 0;
+  --app-clr-green-01: 0, 150, 136;
+  --app-clr-green-02: 50, 205, 50;
+  --app-clr-green-03: 144, 238, 144;
+  --app-clr-green-04: 0, 128, 0;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > yellow */
+:root {
+  --app-clr-yellow: 255, 255, 0;
+  --app-clr-yellow-01: 200, 200, 0;
+  --app-clr-yellow-02: 192, 192, 0;
+  --app-clr-yellow-03: 255, 235, 59;
+  --app-clr-yellow-04: 214, 214, 0;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > orange */
+:root {
+  --app-clr-orange: 255, 119, 15;
+  --app-clr-orange-01: 255, 140, 0;
+  --app-clr-orange-02: 255, 165, 0;
+  --app-clr-orange-03: 255, 180, 70;
+  --app-clr-orange-04: 255, 200, 124;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > blue */
+:root {
+  --app-clr-blue: 0, 123, 255;
+  --app-clr-blue-01: 0, 58, 121;
+  --app-clr-blue-02: 0, 208, 255;
+  --app-clr-blue-03: 70, 130, 180;
+  --app-clr-blue-04: 135, 206, 250;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > silver */
+:root {
+  --app-clr-silver: 191, 191, 191;
+  --app-clr-silver-01: 211, 211, 211;
+  --app-clr-silver-02: 192, 192, 192;
+  --app-clr-silver-03: 169, 169, 169;
+  --app-clr-silver-04: 220, 220, 220;
+}
+
+/** STYLE: VARIABLES > COLORS > VARIANTS > purple */
+:root {
+  --app-clr-purple: 128, 0, 128;
+  --app-clr-purple-01: 148, 0, 211;
+  --app-clr-purple-02: 186, 85, 211;
+  --app-clr-purple-03: 216, 191, 216;
+  --app-clr-purple-04: 75, 0, 130;
+}

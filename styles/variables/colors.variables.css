@@ -1,0 +1,17 @@
+/** STYLE: VARIABLES > COLORS
+ * **************************************************
+ ** (RGB triplets for easy rgba(var(--var), a))
+ * --------------------------------------------------
+ * The colors in this section are defined in RGB
+ * format.
+ *
+ * The colors are defined in the following format:
+ * --------------------------------------------------
+ * * "--app-clr-"
+ * ************************************************** */
+
+/** STYLE: VARIABLES > COLORS > VARIANTS */
+@import url('./colors/variants.colors.variables.css');
+
+/** STYLE: VARIABLES > COLORS > THEME */
+@import url('./colors/theme.colors.variables.css');

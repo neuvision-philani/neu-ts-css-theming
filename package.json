@@ -1,0 +1,48 @@
+{
+  "name": "neu-ts-css-theming",
+  "version": "1.0.0",
+  "description": "Reusable theming & styling models for typescript apps (extensible classes + runtime CSS var applier).",
+  "license": "MIT",
+  "author": "Philani C Mabuza",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "styles"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --sourcemap",
+    "clean": "rimraf dist || rd /s /q dist",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuvision-philani/neu-ts-css-theming.git"
+  },
+  "keywords": [
+    "angular",
+    "theme",
+    "css",
+    "variables",
+    "css variables",
+    "esm",
+    "cjs"
+  ],
+  "style": "./styles/index.css"
+}

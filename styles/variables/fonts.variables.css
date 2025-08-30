@@ -1,0 +1,23 @@
+/** STYLE: VARIABLES > FONTS
+ * **************************************************
+ * The font variables in this section are defined in
+ * CSS format.
+ *
+ * The variables are defined in the following format:
+ * --------------------------------------------------
+ * * "--app-theme-font-"
+ * ************************************************** */
+
+/** STYLE: VARIABLES > FONTS > SIZES */
+:root {
+    --app-theme-font-size-title: 30px;
+    --app-theme-font-size-subtitle: 24px;
+    --app-theme-font-size: 16px;
+}
+
+/** STYLE: VARIABLES > FONTS > FAMILY */
+:root {
+    --app-theme-font-family-title: "BraveSansBold", "Roboto", "Helvetica Neue", "sans-serif";
+    --app-theme-font-family-subtitle: "BraveSansBold", "Roboto", "Helvetica Neue", "sans-serif";
+    --app-theme-font-family: "BraveSans", "Roboto", "Helvetica Neue", "sans-serif";
+}

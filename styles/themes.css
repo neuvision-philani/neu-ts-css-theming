@@ -1,0 +1,8 @@
+/** STYLE: THEMES
+ * **************************************************
+ * This file imports all css themes that can be
+ * used throughout the application.
+ * ************************************************** */
+
+/** STYLE: THEMES > APP */
+@import url("./themes/app.theme.css");

@@ -1,0 +1,43 @@
+/** STYLE: VARIABLES
+ * **************************************************
+ * This file imports all css variables that can be 
+ * used throughout the application.
+ * ************************************************** */
+
+/** STYLE: VARIABLES > COLORS */
+@import url('./variables/colors.variables.css');
+
+/** STYLE: VARIABLES > FONTS */
+@import url('./variables/fonts.variables.css');
+
+/** STYLE: VARIABLES > MISC */
+:root {
+    --app-theme-name: 'app';
+}
+
+/** STYLE: VARIABLES > SIZES */
+:root {
+    --app-min-width: 760px;
+    --app-max-width: 1960px;
+}
+
+/** STYLE: VARIABLES > Z-INDEX */
+:root {
+    --app-z-index-heaven: 9999;
+    --app-z-index-mountain: 100;
+    --app-z-index-hill: 10;
+    --app-z-index-top: 1;
+    --app-z-index: auto;
+    --app-z-index-bottom: -1;
+    --app-z-index-basement: -10;
+    --app-z-index-underground: -100;
+    --app-z-index-hell: -9999;
+}
+
+/** STYLE: VARIABLES > SCROLLBAR */
+:root {
+    --app-scrollbar-size: 8px;
+    --app-scrollbar-background: var(--app-clr-white);
+    --app-scrollbar-color: var(--app-clr-gray);
+    --app-scrollbar-hover-color: var(--app-clr-dark-gray);
+}

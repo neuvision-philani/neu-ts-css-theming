@@ -1,0 +1,22 @@
+/** STYLES: VARIABLES > COLORS > THEME
+  * **************************************************
+  ** (RGB triplets for easy rgba(var(--var), a))
+  * --------------------------------------------------
+  * The colors in this section are defined in RGB
+  * format.
+  * --------------------------------------------------
+  * "--app-theme-"
+  * ************************************************** */
+:root {
+  --app-theme-primary: var(--app-clr-red-dark);
+  --app-theme-secondary: var(--app-clr-pink);
+  --app-theme-tertiary: var(--app-clr-orange);
+  --app-theme-accent: var(--app-clr-silver);
+  --app-theme-success: var(--app-clr-green);
+  --app-theme-info: var(--app-clr-blue);
+  --app-theme-warning: var(--app-clr-yellow);
+  --app-theme-danger: var(--app-clr-red);
+  --app-theme-light: var(--app-clr-white);
+  --app-theme-dark: var(--app-clr-black);
+  --app-theme-accent: var(--app-clr-silver);
+}
