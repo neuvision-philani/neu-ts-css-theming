@@ -1,6 +1,6 @@
 {
   "name": "neu-ts-css-theming",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable theming & styling models for typescript apps (extensible classes + runtime CSS var applier).",
   "license": "MIT",
   "author": "Philani C Mabuza",
