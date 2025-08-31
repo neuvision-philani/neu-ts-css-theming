@@ -207,21 +207,21 @@ export class AppStyleModel {
     // ATTRIBUTE: CONFIG > ALIGNMENT > GRID
     if (config?.grid !== undefined || populateDefaults === true) { this.grid = new GridStyleModel(config?.grid); }
     // ATTRIBUTE: CONFIG > border
-    if (config?.border !== undefined || populateDefaults === true) { this.border = new BorderStyleModel(config?.border); }
+    if (config?.border !== undefined || populateDefaults === true) { this.border = new BorderStyleModel({ ...config?.border, theme: theme }); }
     // ATTRIBUTE: CONFIG > boxShadow
     if (config?.boxShadow !== undefined || populateDefaults === true) {
       this.boxShadow = {
-        general: config?.boxShadow?.general || new BoxShadowStyleModel(config?.boxShadow?.general),
-        hover: config?.boxShadow?.hover || new BoxShadowStyleModel(config?.boxShadow?.hover),
-        active: config?.boxShadow?.active || new BoxShadowStyleModel(config?.boxShadow?.active),
+        general: config?.boxShadow?.general || new BoxShadowStyleModel({ ...config?.boxShadow?.general, theme: theme }),
+        hover: config?.boxShadow?.hover || new BoxShadowStyleModel({ ...config?.boxShadow?.hover, theme: theme }),
+        active: config?.boxShadow?.active || new BoxShadowStyleModel({ ...config?.boxShadow?.active, theme: theme }),
       };
     }
     // ATTRIBUTE: CONFIG > text
-    if (config?.text !== undefined || populateDefaults === true) { this.text = new TextStyleModel(config?.text); }
+    if (config?.text !== undefined || populateDefaults === true) { this.text = new TextStyleModel({ ...config?.text, theme: theme }); }
     // ATTRIBUTE: CONFIG > SIZE
     if (config?.size !== undefined || populateDefaults === true) { this.size = new SizeStyleModel(config?.size); }
     // ATTRIBUTE: CONFIG > outline
-    if (config?.outline !== undefined || populateDefaults === true) { this.outline = new OutlineStyleModel(config?.outline); }
+    if (config?.outline !== undefined || populateDefaults === true) { this.outline = new OutlineStyleModel({ ...config?.outline, theme: theme }); }
   }
 }
 
