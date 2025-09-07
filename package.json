@@ -1,6 +1,6 @@
 {
   "name": "neu-ts-css-theming",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Lightweight CSS-variables theming with TS helpers for Angular or any web app.",
   "license": "MIT",
   "author": "Philani C Mabuza",
