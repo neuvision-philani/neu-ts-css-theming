@@ -37,6 +37,15 @@
   --app-clr-red-04: 255, 69, 0;
 }
 
+/** STYLE: VARIABLES > COLORS > VARIANTS > dark-red */
+:root {
+  --app-clr-dark-red: 135, 15, 30;
+  --app-clr-dark-red-01: 110, 12, 24;
+  --app-clr-dark-red-02: 90, 10, 20;
+  --app-clr-dark-red-03: 70, 8, 16;
+  --app-clr-dark-red-04: 50, 6, 12;
+}
+
 /** STYLE: VARIABLES > COLORS > VARIANTS > pink */
 :root {
   --app-clr-pink: 235, 92, 120;
