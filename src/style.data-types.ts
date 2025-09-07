@@ -4,9 +4,33 @@ export type ThemeNames = (
   | 'custom'
 );
 
+// DATATYPE: PaletteNames
+export type PaletteNames = (
+  'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'accent'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger'
+  | 'light'
+  | 'dark'
+  | 'accent'
+);
+
 export const ThemeNamesList = [
-  'app',
-  'custom'
+  'primary',
+  'secondary',
+  'tertiary',
+  'accent',
+  'success',
+  'info',
+  'warning',
+  'danger',
+  'light',
+  'dark',
+  'accent'
 ];
 
 // DATATYPE: DisplayDataType

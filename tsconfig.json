@@ -1,16 +1,16 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "declaration": true,
-    "declarationMap": true,
-    "outDir": "dist",
-    "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": [
-    "src"
-  ]
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ESNext",
+        "declaration": true,
+        "declarationDir": "dist",
+        "emitDeclarationOnly": false,
+        "outDir": "dist",
+        "strict": true,
+        "moduleResolution": "Bundler",
+        "skipLibCheck": true
+    },
+    "include": [
+        "src"
+    ]
 }

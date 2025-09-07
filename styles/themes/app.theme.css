@@ -3,7 +3,7 @@
  * This file contains all the overrides for the
  * above indicated theme.
  * ************************************************** */
-:root[app-theme-name="app"] {
+:root[data-theme="app"] {
     --app-theme-primary: 135, 15, 30;
     --app-theme-secondary: 235, 92, 120;
     --app-theme-tertiary: 255, 119, 15;

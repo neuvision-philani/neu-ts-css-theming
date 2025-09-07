@@ -3,4 +3,4 @@
  * This file contains all the overrides for the
  * above indicated theme.
  * ************************************************** */
-:root[app-theme-name="light"] {}
+:root[data-theme="light"] {}

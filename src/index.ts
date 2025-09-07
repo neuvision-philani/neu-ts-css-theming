@@ -1,7 +1,9 @@
 // IMPORT: FEATURES > DATA-TYPES
-import { ThemeNames } from './style.data-types';
+import type { ThemeNames } from "./style.data-types";
 
-// Lightweight ThemeEngine (optional) to apply CSS variables at runtime
+export const DEFAULT_CSS_VAR_PREFIX = "--app-theme-";
+export const THEME_ATTR = "data-theme";
+
 export type CSSVars = Record<string, string>;
 
 export interface ThemeApplierOptions {
@@ -11,31 +13,38 @@ export interface ThemeApplierOptions {
   target?: HTMLElement;
 }
 
-/**
- * Applies a flat map of CSS variables to the document root (or a provided element).
- * Example:
- * applyCssVars({ '--app-theme-primary': '255,0,0', '--app-theme-light': '255,255,255' });
- */
+const docEl = typeof document !== "undefined" ? document.documentElement : undefined;
+
+/** Apply CSS variables to <html> (or a provided element). */
 export function applyCssVars(vars: CSSVars, opts: ThemeApplierOptions = {}): void {
-  const target = opts.target ?? (typeof document !== 'undefined' ? document.documentElement : undefined);
+  const target = opts.target ?? docEl;
   if (!target) return;
-  for (const [k, v] of Object.entries(vars)) {
-    target.style.setProperty(k, v);
-  }
+  for (const [k, v] of Object.entries(vars)) target.style.setProperty(k, v);
 }
 
-/** Sets data-theme on :root to enable CSS theme overrides shipped in styles/ */
-export function setTheme(theme: ThemeNames): void {
-  if (typeof document === 'undefined') return;
-  document.documentElement.setAttribute('app-theme-name', String(theme));
+export interface SetThemeOptions {
+  /** Attribute used to store theme; defaults to "data-theme". */
+  attr?: string;
+  /** Target element to annotate; defaults to <html>. */
+  target?: HTMLElement;
 }
 
-/** Reads the current theme from :root[app-theme-name] */
-export function getTheme(): ThemeNames | undefined {
-  if (typeof document === 'undefined') return undefined;
-  return document.documentElement.getAttribute('app-theme-name') as ThemeNames | undefined;
+/** Sets data-theme on :root to drive CSS theme rules. */
+export function setTheme(theme: ThemeNames, opts: SetThemeOptions = {}): void {
+  const target = opts.target ?? docEl;
+  if (!target) return;
+  const attr = opts.attr ?? THEME_ATTR;
+  target.setAttribute(attr, String(theme));
 }
 
-// EXPORT: FEATURES > Public API: re-export your models
+/** Reads theme from :root[data-theme] (or a custom attr). */
+export function getTheme(opts: { attr?: string; target?: HTMLElement } = {}): ThemeNames | undefined {
+  const target = opts.target ?? docEl;
+  if (!target) return undefined;
+  const attr = opts.attr ?? THEME_ATTR;
+  return target.getAttribute(attr) as ThemeNames | undefined;
+}
+
+// EXPORT: Public API
 export * from "./style.data-types";
 export * from "./style.models";
