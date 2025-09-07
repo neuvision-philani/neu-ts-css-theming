@@ -1,11 +1,5 @@
-// DATATYPE: ThemeNames
-export type ThemeNames = (
-  'app'
-  | 'custom'
-);
-
-// DATATYPE: PaletteNames
-export type PaletteNames = (
+// DATATYPE: AppThemeNames
+export type AppThemeNames = (
   'primary'
   | 'secondary'
   | 'tertiary'
@@ -17,9 +11,10 @@ export type PaletteNames = (
   | 'light'
   | 'dark'
   | 'accent'
+  | 'custom'
 );
 
-export const ThemeNamesList = [
+export const AppThemeNamesList = [
   'primary',
   'secondary',
   'tertiary',
@@ -30,7 +25,8 @@ export const ThemeNamesList = [
   'danger',
   'light',
   'dark',
-  'accent'
+  'accent',
+  'custom'
 ];
 
 // DATATYPE: DisplayDataType

@@ -28,7 +28,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-primary-text-rgb: 1, 46, 111;
   /** COLOR > SHADE: 25/25 */
-  --app-theme-primary-outline-rgb: 0, 4, 10;
+  --app-theme-primary-border-rgb: 0, 4, 10;
   /** COLOR > SHADE: 1/25 */
   --app-theme-primary-background-rgb: 245, 249, 255;
   /** COLOR > SHADE: RED */
@@ -48,7 +48,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-secondary-text-rgb: 59, 57, 53;
   /** COLOR > SHADE: 25/25 */
-  --app-theme-secondary-outline-rgb: 5, 5, 5;
+  --app-theme-secondary-border-rgb: 5, 5, 5;
   /** COLOR > SHADE: 1/25 */
   --app-theme-secondary-background-rgb: 250, 250, 250;
   /** COLOR > SHADE: RED */
@@ -68,7 +68,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-tertiary-text-rgb: 100, 58, 13;
   /** COLOR > SHADE: 25/25 */
-  --app-theme-tertiary-outline-rgb: 9, 5, 1;
+  --app-theme-tertiary-border-rgb: 9, 5, 1;
   /** COLOR > SHADE: 1/25 */
   --app-theme-tertiary-background-rgb: 254, 250, 246;
   /** COLOR > SHADE: RED */
@@ -88,7 +88,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-success-text-rgb: 18, 95, 59;
   /** COLOR > SHADE: 22/25 */
-  --app-theme-success-outline-rgb: 11, 60, 37;
+  --app-theme-success-border-rgb: 11, 60, 37;
   /** COLOR > SHADE: 1/25 */
   --app-theme-success-background-rgb: 246, 253, 250;
   /** COLOR > SHADE: RED */
@@ -108,7 +108,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-info-text-rgb: 6, 90, 106;
   /** COLOR > SHADE: 22/25 */
-  --app-theme-info-outline-rgb: 4, 57, 68;
+  --app-theme-info-border-rgb: 4, 57, 68;
   /** COLOR > SHADE: 1/25 */
   --app-theme-info-background-rgb: 4, 57, 68;
   /** COLOR > SHADE: RED */
@@ -128,7 +128,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-warning-text-rgb: 112, 84, 0;
   /** COLOR > SHADE: 22/25 */
-  --app-theme-warning-outline-rgb: 71, 53, 0;
+  --app-theme-warning-border-rgb: 71, 53, 0;
   /** COLOR > SHADE: 1/25 */
   --app-theme-warning-background-rgb: 255, 252, 245;
   /** COLOR > SHADE: RED */
@@ -148,7 +148,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-danger-text-rgb: 96, 17, 24;
   /** COLOR > SHADE: 22/25 */
-  --app-theme-danger-outline-rgb: 61, 11, 15;
+  --app-theme-danger-border-rgb: 61, 11, 15;
   /** COLOR > SHADE: 1/25 */
   --app-theme-danger-background-rgb: 253, 246, 247;
   /** COLOR > SHADE: RED */
@@ -168,7 +168,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-light-text-rgb: 56, 56, 56;
   /** COLOR > SHADE: 22/25 */
-  --app-theme-light-outline-rgb: 0, 0, 0;
+  --app-theme-light-border-rgb: 0, 0, 0;
   /** COLOR > SHADE: 1/25 */
   --app-theme-light-background-rgb: 240, 240, 240;
   /** COLOR > SHADE: RED */
@@ -188,7 +188,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-dark-text-rgb: 240, 240, 240;
   /** COLOR > SHADE: 22/25 */
-  --app-theme-dark-outline-rgb: 0, 0, 0;
+  --app-theme-dark-border-rgb: 0, 0, 0;
   /** COLOR > SHADE: 1/25 */
   --app-theme-dark-background-rgb: 0, 0, 0;
   /** COLOR > SHADE: RED */
@@ -208,7 +208,7 @@
   /** COLOR > SHADE: 20/25 */
   --app-theme-accent-text-rgb: 44, 6, 106;
   /** COLOR > SHADE: 22/25 */
-  --app-theme-accent-outline-rgb: 28, 4, 68;
+  --app-theme-accent-border-rgb: 28, 4, 68;
   /** COLOR > SHADE: 1/25 */
   --app-theme-accent-background-rgb: 249, 245, 254;
   /** COLOR > SHADE: RED */

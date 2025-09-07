@@ -7,7 +7,7 @@ import * as CSS from './style.data-types';
  * ************************************************** */
 export class AppThemeModel {
   // ATTRIBUTE: INIT > themeName
-  themeName?: CSS.ThemeNames;
+  themeName?: CSS.AppThemeNames;
   // ATTRIBUTE: INIT > colors
   colors?: AppThemeColorsModel;
 
@@ -26,7 +26,7 @@ export class AppThemeModel {
           )
         )
           ? 'custom'
-          : config?.themeName || 'app'
+          : config?.themeName || 'light'
       );
     }
 
@@ -37,14 +37,14 @@ export class AppThemeModel {
   }
 
   // FUNCTION: ANGULAR > configAppTheme
-  public static configAppTheme(config?: CSS.ThemeNames | AppThemeModel): AppThemeModel {
+  public static configAppTheme(config?: CSS.AppThemeNames | AppThemeModel): AppThemeModel {
     // ATTRIBUTE: CONFIG > VARIABLES
     const themeConfig = !config || typeof config === 'string' ? undefined : (config || undefined);
     const themeName = (
       themeConfig !== undefined
         ? themeConfig?.themeName || 'custom'
-        : config || 'app'
-    ) as CSS.ThemeNames;
+        : config || 'light'
+    ) as CSS.AppThemeNames;
     let returnValue = new AppThemeModel(themeConfig);
 
     // ATTRIBUTE: CONFIG > themeName
@@ -52,21 +52,17 @@ export class AppThemeModel {
 
     // ATTRIBUTE: CONFIG > theme
     if (themeName !== 'custom') {
-      switch (themeName) {
-        default: // case 'app':
-          returnValue.themeName = 'app';
-          returnValue = new AppThemeModel({
-            themeName: 'app',
-            colors: new AppThemeColorsModel({
-              backgroundColor: 'rgba(var(--app-theme-primary), 1)',
-              textColor: 'rgba(var(--app-theme-light), 1)',
-              iconColor: 'rgba(var(--app-theme-light), 1)',
-              borderColor: 'rgba(var(--app-theme-light), 0.25)',
-              rippleColor: 'rgba(var(--app-theme-tertiary), 0.2)',
-            }),
-          })
-          break;
-      }
+      returnValue = new AppThemeModel({
+        themeName: themeName,
+        colors: new AppThemeColorsModel({
+          backgroundColor: `rgba(var(--app-theme-${themeName}-background-rgb), 1)`,
+          textColor: `rgba(var(--app-theme-${themeName}-text-rgb), 1)`,
+          iconColor: `rgba(var(--app-theme-${themeName}-text-rgb), 1)`,
+          borderColor: `rgba(var(--app-theme-${themeName}-border-rgb), 0.25)`,
+          rippleColor: `rgba(var(--app-theme-${themeName}-ripple-rgb), 0.2)`,
+          boxShadowColor: `rgba(var(--app-theme-${themeName}-shadow-rgb), 0.2`,
+        }),
+      });
     }
 
     // FUNCTION: CONFIG > return
@@ -86,11 +82,7 @@ export class AppThemeColorsModel {
   borderColor?: string;
   rippleColor?: string;
   // ATTRIBUTE: INIT > box-shadow
-  boxShadowColor?: {
-    general?: string,
-    hover?: string,
-    active?: string,
-  };
+  boxShadowColor?: string;
 
   // FUNCTION: ANGULAR > constructor
   constructor(config?: Partial<AppThemeColorsModel>, populateDefaultVariablesForAllFields?: boolean) {
@@ -98,18 +90,24 @@ export class AppThemeColorsModel {
     const populateDefaults = populateDefaultVariablesForAllFields ?? true;
 
     // ATTRIBUTE: CONFIG > GENERAL
-    if (config?.backgroundColor !== undefined || populateDefaults === true) { this.backgroundColor = config?.backgroundColor || 'rgba(var(--app-theme-light), 1)'; }
-    if (config?.textColor !== undefined || populateDefaults === true) { this.textColor = config?.textColor || 'rgba(var(--app-theme-dark), 1)'; }
-    if (config?.iconColor !== undefined || populateDefaults === true) { this.iconColor = config?.iconColor || this.textColor; }
-    if (config?.borderColor !== undefined || populateDefaults === true) { this.borderColor = config?.borderColor || 'rgba(var(--app-theme-dark), 1)'; }
-    if (config?.rippleColor !== undefined || populateDefaults === true) { this.rippleColor = config?.rippleColor || 'rgba(var(--app-theme-info), 1)'; }
+    if (config?.backgroundColor !== undefined || populateDefaults === true) {
+      this.backgroundColor = config?.backgroundColor || 'rgba(var(--app-theme-light-background-rgb), 1)';
+    }
+    if (config?.textColor !== undefined || populateDefaults === true) {
+      this.textColor = config?.textColor || 'rgba(var(--app-theme-light-text-rgb), 1)';
+    }
+    if (config?.iconColor !== undefined || populateDefaults === true) {
+      this.iconColor = config?.iconColor || this.textColor;
+    }
+    if (config?.borderColor !== undefined || populateDefaults === true) {
+      this.borderColor = config?.borderColor || 'rgba(var(--app-theme-light-border-rgb), 1)';
+    }
+    if (config?.rippleColor !== undefined || populateDefaults === true) {
+      this.rippleColor = config?.rippleColor || 'rgba(var(--app-theme-light-ripple-rgb), 1)';
+    }
     // ATTRIBUTE: CONFIG > box-shadow
     if (config?.boxShadowColor !== undefined || populateDefaults === true) {
-      this.boxShadowColor = {
-        general: config?.boxShadowColor?.general || 'rgba(var(--app-theme-dark), 1)',
-        hover: config?.boxShadowColor?.hover || 'rgba(var(--app-theme-light), 1)',
-        active: config?.boxShadowColor?.active || 'rgba(var(--app-theme-tertiary), 1)',
-      };
+      this.boxShadowColor = 'rgba(var(--app-theme-light-shadow-rgb), 1)';
     }
   }
 }
@@ -120,7 +118,7 @@ export class AppThemeColorsModel {
  * ************************************************** */
 export class AppStyleModel {
   // ATTRIBUTE: INIT > theme
-  public theme?: CSS.ThemeNames | AppThemeModel;
+  public theme?: CSS.AppThemeNames | AppThemeModel;
   // ATTRIBUTE: INIT > GENERAL
   public reveal?: boolean;
   public order?: string;
@@ -333,7 +331,7 @@ export class GridStyleModel {
  * ************************************************** */
 export class BorderStyleModel {
   // ATTRIBUTE: INIT > theme
-  theme?: CSS.ThemeNames | AppThemeModel;
+  theme?: CSS.AppThemeNames | AppThemeModel;
   // ATTRIBUTE: INIT > GENERAL
   public color?: string;
   public style?: CSS.BorderStyleDataType;
@@ -362,7 +360,7 @@ export class BorderStyleModel {
  * ************************************************** */
 export class BoxShadowsStyleModel {
   // ATTRIBUTE: INIT > theme
-  public theme?: CSS.ThemeNames | AppThemeModel;
+  public theme?: CSS.AppThemeNames | AppThemeModel;
   // ATTRIBUTE: INIT > GENERAL
   public general?: BoxShadowStyleModel;
   public hover?: BoxShadowStyleModel;
@@ -380,19 +378,19 @@ export class BoxShadowsStyleModel {
     if (config?.general !== undefined || populateDefaults === true) {
       this.general = config?.general || new BoxShadowStyleModel({
         ...config?.general,
-        color: config?.general?.color || theme?.colors?.boxShadowColor?.general,
+        color: config?.general?.color || theme?.colors?.boxShadowColor,
       });
     }
     if (config?.hover !== undefined || populateDefaults === true) {
       this.hover = config?.hover || new BoxShadowStyleModel({
         ...config?.hover,
-        color: config?.hover?.color || theme?.colors?.boxShadowColor?.hover,
+        color: config?.hover?.color || theme?.colors?.boxShadowColor,
       });
     }
     if (config?.active !== undefined || populateDefaults === true) {
       this.active = config?.active || new BoxShadowStyleModel({
         ...config?.active,
-        color: config?.active?.color || theme?.colors?.boxShadowColor?.active,
+        color: config?.active?.color || theme?.colors?.boxShadowColor,
       });
     }
   }
@@ -404,7 +402,7 @@ export class BoxShadowsStyleModel {
  * ************************************************** */
 export class BoxShadowStyleModel {
   // ATTRIBUTE: INIT > theme
-  theme?: CSS.ThemeNames | AppThemeModel;
+  theme?: CSS.AppThemeNames | AppThemeModel;
   // ATTRIBUTE: INIT > GENERAL
   public hOffset?: string;
   public vOffset?: string;
@@ -426,7 +424,7 @@ export class BoxShadowStyleModel {
     if (config?.vOffset !== undefined || populateDefaults === true) { this.vOffset = config?.vOffset || '0'; }
     if (config?.blur !== undefined || populateDefaults === true) { this.blur = config?.blur || '0'; }
     if (config?.spread !== undefined || populateDefaults === true) { this.spread = config?.spread || '0'; }
-    if (config?.color !== undefined || populateDefaults === true) { this.color = config?.color || theme?.colors?.boxShadowColor?.general; }
+    if (config?.color !== undefined || populateDefaults === true) { this.color = config?.color || theme?.colors?.boxShadowColor; }
   }
 }
 
@@ -436,7 +434,7 @@ export class BoxShadowStyleModel {
  * ************************************************** */
 export class TextStyleModel {
   // ATTRIBUTE: INIT > theme
-  public theme?: CSS.ThemeNames | AppThemeModel;
+  public theme?: CSS.AppThemeNames | AppThemeModel;
   // ATTRIBUTE: INIT > GENERAL
   public reveal?: boolean;
   public caption?: string;
@@ -595,7 +593,7 @@ export class FontStyleModel {
  * ************************************************** */
 export class OutlineStyleModel {
   // ATTRIBUTE: INIT > theme
-  theme?: CSS.ThemeNames | AppThemeModel;
+  theme?: CSS.AppThemeNames | AppThemeModel;
   // ATTRIBUTE: INIT > GENERAL
   public color?: string;
   public style?: CSS.OutlineStyleDataType;

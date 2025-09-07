@@ -1,5 +1,5 @@
 // IMPORT: FEATURES > DATA-TYPES
-import type { ThemeNames } from "./style.data-types";
+import type { AppThemeNames } from "./style.data-types";
 
 export const DEFAULT_CSS_VAR_PREFIX = "--app-theme-";
 export const THEME_ATTR = "data-theme";
@@ -30,7 +30,7 @@ export interface SetThemeOptions {
 }
 
 /** Sets data-theme on :root to drive CSS theme rules. */
-export function setTheme(theme: ThemeNames, opts: SetThemeOptions = {}): void {
+export function setTheme(theme: AppThemeNames, opts: SetThemeOptions = {}): void {
   const target = opts.target ?? docEl;
   if (!target) return;
   const attr = opts.attr ?? THEME_ATTR;
@@ -38,11 +38,11 @@ export function setTheme(theme: ThemeNames, opts: SetThemeOptions = {}): void {
 }
 
 /** Reads theme from :root[data-theme] (or a custom attr). */
-export function getTheme(opts: { attr?: string; target?: HTMLElement } = {}): ThemeNames | undefined {
+export function getTheme(opts: { attr?: string; target?: HTMLElement } = {}): AppThemeNames | undefined {
   const target = opts.target ?? docEl;
   if (!target) return undefined;
   const attr = opts.attr ?? THEME_ATTR;
-  return target.getAttribute(attr) as ThemeNames | undefined;
+  return target.getAttribute(attr) as AppThemeNames | undefined;
 }
 
 // EXPORT: Public API
