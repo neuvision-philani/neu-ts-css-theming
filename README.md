@@ -82,4 +82,4 @@ They are designed to:
 
 ## 📜 License
 
-This project is licensed under the **MIT License** – see the [LICENSE](./https://github.com/neuvision-philani/neu-ts-css-theming/blob/master/LICENSE) file for details.
+This project is licensed under the **MIT License** – see the [LICENSE](https://github.com/neuvision-philani/neu-ts-css-theming/blob/master/LICENSE) file for details.
