@@ -5,6 +5,10 @@ This package provides a collection of helper functions and styles designed to st
 
 ---
 
+## :octocat: GitHub
+
+- GitHub Repository: [neu-ts-css-theming](https://github.com/neuvision-philani/neu-ts-css-theming)
+
 ## 📦 Installation
 
 ```bash
@@ -72,10 +76,10 @@ They are designed to:
 
 ## 💬 Contact & Support
 
-- Issues / Bugs: Open a GitHub Issue
+- Issues / Bugs: Open a [GitHub Issue](https://github.com/neuvision-philani/neu-ts-css-theming/issues/new)
 - Contributions: Fork the repo and submit pull requests
 - Community: Join the discussions in the repository
 
 ## 📜 License
 
-This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the **MIT License** – see the [LICENSE](./https://github.com/neuvision-philani/neu-ts-css-theming/blob/master/LICENSE) file for details.
