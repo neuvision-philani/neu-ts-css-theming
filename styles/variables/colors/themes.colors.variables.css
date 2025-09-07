@@ -1,0 +1,15 @@
+/** STYLES: VARIABLES > COLORS > THEME
+  * **************************************************
+  * The variables in this section are related to
+  * theme colors.
+  *
+  * The colors are defined in the following format:
+  * --------------------------------------------------
+  * "--app-theme-"
+  * ************************************************** */
+
+/** STYLE: VARIABLES > COLORS > THEMES > FILLED */
+@import url('./themes/themes.colors.filled.variables.css');
+
+/** STYLE: VARIABLES > COLORS > THEMES > RGB-CODES */
+@import url('./themes/themes.colors.rgb-codes.variables.css');

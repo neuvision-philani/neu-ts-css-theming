@@ -1,0 +1,212 @@
+/** STYLES: VARIABLES > RGB FILLED COLORS > THEME
+  * **************************************************
+  ** (RGB triplets for easy rgba(var(--var), a))
+  * --------------------------------------------------
+  * The colors in this section are defined in RGB
+  * format, and can simply be used by referencing the
+  * variable name and the corresponding color will be 
+  * applied.
+  * 
+  * To update the colors simply change the value of
+  * the RGB code in the variables defined in
+  * "themes.colors.rgb-codes.variables.css".
+  * ************************************************** */
+/** STYLES: VARIABLES > RGB CODE COLORS > PRIMARY */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-primary: rgba(var(--app-theme-primary-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-primary-selected: rgba(var(--app-theme-primary-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-primary-ripple: rgba(var(--app-theme-primary-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-primary-text: rgba(var(--app-theme-primary-text-rgb), 1);
+  /** COLOR > SHADE: 25/25 */
+  --app-theme-primary-outline: rgba(var(--app-theme-primary-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-primary-background: rgba(var(--app-theme-primary-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-primary-error: rgba(var(--app-theme-primary-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-primary-shadow: rgba(var(--app-theme-primary-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > SECONDARY */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-secondary: rgba(var(--app-theme-secondary-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-secondary-selected: rgba(var(--app-theme-secondary-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-secondary-ripple: rgba(var(--app-theme-secondary-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-secondary-text: rgba(var(--app-theme-secondary-text-rgb), 1);
+  /** COLOR > SHADE: 25/25 */
+  --app-theme-secondary-outline: rgba(var(--app-theme-secondary-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-secondary-background: rgba(var(--app-theme-secondary-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-secondary-error: rgba(var(--app-theme-secondary-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-secondary-shadow: rgba(var(--app-theme-secondary-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > TERTIARY */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-tertiary: rgba(var(--app-theme-tertiary-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-tertiary-selected: rgba(var(--app-theme-tertiary-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-tertiary-ripple: rgba(var(--app-theme-tertiary-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-tertiary-text: rgba(var(--app-theme-tertiary-text-rgb), 1);
+  /** COLOR > SHADE: 25/25 */
+  --app-theme-tertiary-outline: rgba(var(--app-theme-tertiary-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-tertiary-background: rgba(var(--app-theme-tertiary-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-tertiary-error: rgba(var(--app-theme-tertiary-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-tertiary-shadow: rgba(var(--app-theme-tertiary-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > SUCCESS */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-success: rgba(var(--app-theme-success-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-success-selected: rgba(var(--app-theme-success-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-success-ripple: rgba(var(--app-theme-success-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-success-text: rgba(var(--app-theme-success-text-rgb), 1);
+  /** COLOR > SHADE: 22/25 */
+  --app-theme-success-outline: rgba(var(--app-theme-success-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-success-background: rgba(var(--app-theme-success-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-success-error: rgba(var(--app-theme-success-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-success-shadow: rgba(var(--app-theme-success-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > INFO */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-info: rgba(var(--app-theme-info-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-info-selected: rgba(var(--app-theme-info-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-info-ripple: rgba(var(--app-theme-info-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-info-text: rgba(var(--app-theme-info-text-rgb), 1);
+  /** COLOR > SHADE: 22/25 */
+  --app-theme-info-outline: rgba(var(--app-theme-info-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-info-background: rgba(var(--app-theme-info-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-info-error: rgba(var(--app-theme-info-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-info-shadow: rgba(var(--app-theme-info-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > WARNING */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-warning: rgba(var(--app-theme-warning-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-warning-selected: rgba(var(--app-theme-warning-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-warning-ripple: rgba(var(--app-theme-warning-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-warning-text: rgba(var(--app-theme-warning-text-rgb), 1);
+  /** COLOR > SHADE: 22/25 */
+  --app-theme-warning-outline: rgba(var(--app-theme-warning-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-warning-background: rgba(var(--app-theme-warning-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-warning-error: rgba(var(--app-theme-warning-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-warning-shadow: rgba(var(--app-theme-warning-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > DANGER */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-danger: rgba(var(--app-theme-danger-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-danger-selected: rgba(var(--app-theme-danger-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-danger-ripple: rgba(var(--app-theme-danger-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-danger-text: rgba(var(--app-theme-danger-text-rgb), 1);
+  /** COLOR > SHADE: 22/25 */
+  --app-theme-danger-outline: rgba(var(--app-theme-danger-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-danger-background: rgba(var(--app-theme-danger-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-danger-error: rgba(var(--app-theme-danger-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-danger-shadow: rgba(var(--app-theme-danger-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > LIGHT */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-light: rgba(var(--app-theme-light-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-light-selected: rgba(var(--app-theme-light-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-light-ripple: rgba(var(--app-theme-light-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-light-text: rgba(var(--app-theme-light-text-rgb), 1);
+  /** COLOR > SHADE: 22/25 */
+  --app-theme-light-outline: rgba(var(--app-theme-light-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-light-background: rgba(var(--app-theme-light-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-light-error: rgba(var(--app-theme-light-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-light-shadow: rgba(var(--app-theme-light-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > DARK */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-dark: rgba(var(--app-theme-dark-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-dark-selected: rgba(var(--app-theme-dark-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-dark-ripple: rgba(var(--app-theme-dark-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-dark-text: rgba(var(--app-theme-dark-text-rgb), 1);
+  /** COLOR > SHADE: 22/25 */
+  --app-theme-dark-outline: rgba(var(--app-theme-dark-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-dark-background: rgba(var(--app-theme-dark-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-dark-error: rgba(var(--app-theme-dark-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-dark-shadow: rgba(var(--app-theme-dark-shadow-rgb), 1);
+}
+
+/** STYLES: VARIABLES > RGB CODE COLORS > ACCENT */
+:root {
+  /** COLOR > SHADE: 0/25 */
+  --app-theme-accent: rgba(var(--app-theme-accent-rgb), 1);
+  /** COLOR > SHADE: 3/25 */
+  --app-theme-accent-selected: rgba(var(--app-theme-accent-selected-rgb), 1);
+  /** COLOR > SHADE: 15/25 */
+  --app-theme-accent-ripple: rgba(var(--app-theme-accent-ripple-rgb), 1);
+  /** COLOR > SHADE: 20/25 */
+  --app-theme-accent-text: rgba(var(--app-theme-accent-text-rgb), 1);
+  /** COLOR > SHADE: 22/25 */
+  --app-theme-accent-outline: rgba(var(--app-theme-accent-outline-rgb), 1);
+  /** COLOR > SHADE: 1/25 */
+  --app-theme-accent-background: rgba(var(--app-theme-accent-background-rgb), 1);
+  /** COLOR > SHADE: RED */
+  --app-theme-accent-error: rgba(var(--app-theme-accent-error-rgb), 1);
+  /** COLOR > SHADE: 5/25 */
+  --app-theme-accent-shadow: rgba(var(--app-theme-accent-shadow-rgb), 1);
+}
